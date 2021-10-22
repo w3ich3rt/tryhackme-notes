@@ -1,0 +1,3 @@
+# How to get user on system
+`file:///etc/passwd` in the query field.
+Count user with id higher or equal to 1000.
