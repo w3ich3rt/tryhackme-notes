@@ -1,0 +1,26 @@
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-01-02 22:45 CET
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+NSE: Starting runlevel 1 (of 3) scan.
+Initiating NSE at 22:45
+Completed NSE at 22:45, 0.00s elapsed
+NSE: Starting runlevel 2 (of 3) scan.
+Initiating NSE at 22:45
+Completed NSE at 22:45, 0.00s elapsed
+NSE: Starting runlevel 3 (of 3) scan.
+Initiating NSE at 22:45
+Completed NSE at 22:45, 0.00s elapsed
+Initiating Ping Scan at 22:45
+Scanning 10.10.177.73 [2 ports]
+Completed Ping Scan at 22:45, 0.03s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 22:45
+Completed Parallel DNS resolution of 1 host. at 22:45, 0.02s elapsed
+Initiating Connect Scan at 22:45
+Scanning 10.10.177.73 [65535 ports]
+Discovered open port 3389/tcp on 10.10.177.73
+Discovered open port 80/tcp on 10.10.177.73
+Discovered open port 135/tcp on 10.10.177.73
+Discovered open port 445/tcp on 10.10.177.73
+Discovered open port 139/tcp on 10.10.177.73
+Connect Scan Timing: About 14.18% done; ETC: 22:49 (0:03:08 remaining)
+Connect Scan Timing: About 28.16% done; ETC: 22:49 (0:02:36 remaining)
