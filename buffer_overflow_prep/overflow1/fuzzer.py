@@ -6,7 +6,7 @@ ip = "10.10.49.1"
 
 port = 1337
 timeout = 5
-prefix = "OVERFLOW2 "
+prefix = "OVERFLOW1 "
 
 string = prefix + "A" * 100
 
