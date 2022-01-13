@@ -23,3 +23,34 @@ Connect Scan Timing: About 67.20% done; ETC: 22:07 (0:01:03 remaining)
 Increasing send delay for 10.10.36.127 from 5 to 10 due to max_successful_tryno increase to 5
 Connect Scan Timing: About 79.04% done; ETC: 22:08 (0:00:51 remaining)
 Connect Scan Timing: About 86.38% done; ETC: 22:09 (0:00:38 remaining)
+Completed Connect Scan at 22:10, 344.17s elapsed (65535 total ports)
+Initiating Service scan at 22:10
+Scanning 2 services on 10.10.36.127
+Completed Service scan at 22:10, 6.09s elapsed (2 services on 1 host)
+NSE: Script scanning 10.10.36.127.
+Initiating NSE at 22:10
+Completed NSE at 22:10, 30.08s elapsed
+Initiating NSE at 22:10
+Completed NSE at 22:10, 0.14s elapsed
+Initiating NSE at 22:10
+Completed NSE at 22:10, 0.00s elapsed
+Nmap scan report for 10.10.36.127
+Host is up (0.039s latency).
+Not shown: 65533 closed tcp ports (conn-refused)
+PORT      STATE SERVICE    VERSION
+9999/tcp  open  tcpwrapped
+10000/tcp open  http       SimpleHTTPServer 0.6 (Python 2.7.3)
+|_http-title: Site doesn't have a title (text/html).
+| http-methods: 
+|_  Supported Methods: GET HEAD
+
+NSE: Script Post-scanning.
+Initiating NSE at 22:10
+Completed NSE at 22:10, 0.00s elapsed
+Initiating NSE at 22:10
+Completed NSE at 22:10, 0.00s elapsed
+Initiating NSE at 22:10
+Completed NSE at 22:10, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 380.99 seconds
