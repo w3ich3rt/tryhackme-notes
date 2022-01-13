@@ -1,0 +1,9 @@
+Password for [WORKGROUP\anonymous]:
+
+	Sharename       Type      Comment
+	---------       ----      -------
+	ADMIN$          Disk      Remote Admin
+	C$              Disk      Default share
+	IPC$            IPC       Remote IPC
+	Users           Disk      
+SMB1 disabled -- no workgroup available

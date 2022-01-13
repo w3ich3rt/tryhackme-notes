@@ -1,0 +1,109 @@
+Password for [WORKGROUP\anonymous]:
+Try "help" to get a list of possible commands.
+[?2004hsmb: \> dir
+[?2004l  .                                  DR        0  Fri May 15 03:57:08 2020
+  ..                                 DR        0  Fri May 15 03:57:08 2020
+  Default                           DHR        0  Tue Jul 14 09:07:31 2009
+  desktop.ini                       AHS      174  Tue Jul 14 06:54:24 2009
+  Share                               D        0  Fri May 15 03:58:07 2020
+
+		7863807 blocks of size 4096. 3845086 blocks available
+[?2004hsmb: \> get desktop.ini
+[?2004l[?2004hsmb: \> dir Default
+[?2004l  Default                           DHR        0  Tue Jul 14 09:07:31 2009
+
+		7863807 blocks of size 4096. 3844996 blocks available
+[?2004hsmb: \> cd Default
+[?2004l[?2004hsmb: \Default\> dir
+[?2004l  .                                 DHR        0  Tue Jul 14 09:07:31 2009
+  ..                                DHR        0  Tue Jul 14 09:07:31 2009
+  AppData                           DHn        0  Tue Jul 14 05:20:08 2009
+  Desktop                            DR        0  Tue Jul 14 04:34:59 2009
+  Documents                          DR        0  Tue Jul 14 07:08:56 2009
+  Downloads                          DR        0  Tue Jul 14 04:34:59 2009
+  Favorites                          DR        0  Tue Jul 14 04:34:59 2009
+  Links                              DR        0  Tue Jul 14 04:34:59 2009
+  Music                              DR        0  Tue Jul 14 04:34:59 2009
+  NTUSER.DAT                       AHSn   262144  Sun Apr 19 21:51:09 2020
+  NTUSER.DAT.LOG                     AH     1024  Tue Apr 12 10:32:10 2011
+  NTUSER.DAT.LOG1                    AH   189440  Sun Apr 19 20:52:07 2020
+  NTUSER.DAT.LOG2                    AH        0  Tue Jul 14 04:34:08 2009
+  NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf    AHS    65536  Tue Jul 14 06:45:54 2009
+  NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms    AHS   524288  Tue Jul 14 06:45:54 2009
+  NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms    AHS   524288  Tue Jul 14 06:45:54 2009
+  Pictures                           DR        0  Tue Jul 14 04:34:59 2009
+  Saved Games                        Dn        0  Tue Jul 14 04:34:59 2009
+  Videos                             DR        0  Tue Jul 14 04:34:59 2009
+
+		7863807 blocks of size 4096. 3844996 blocks available
+[?2004hsmb: \Default\> cd Desktop
+[?2004l[?2004hsmb: \Default\Desktop\> dir
+[?2004l  .                                  DR        0  Tue Jul 14 04:34:59 2009
+  ..                                 DR        0  Tue Jul 14 04:34:59 2009
+
+		7863807 blocks of size 4096. 3846887 blocks available
+[?2004hsmb: \Default\Desktop\> cd ..
+[?2004l[?2004hsmb: \Default\> dir Documents
+[?2004l  Documents                          DR        0  Tue Jul 14 07:08:56 2009
+
+		7863807 blocks of size 4096. 3846985 blocks available
+[?2004hsmb: \Default\> dir
+[?2004l  .                                 DHR        0  Tue Jul 14 09:07:31 2009
+  ..                                DHR        0  Tue Jul 14 09:07:31 2009
+  AppData                           DHn        0  Tue Jul 14 05:20:08 2009
+  Desktop                            DR        0  Tue Jul 14 04:34:59 2009
+  Documents                          DR        0  Tue Jul 14 07:08:56 2009
+  Downloads                          DR        0  Tue Jul 14 04:34:59 2009
+  Favorites                          DR        0  Tue Jul 14 04:34:59 2009
+  Links                              DR        0  Tue Jul 14 04:34:59 2009
+  Music                              DR        0  Tue Jul 14 04:34:59 2009
+  NTUSER.DAT                       AHSn   262144  Sun Apr 19 21:51:09 2020
+  NTUSER.DAT.LOG                     AH     1024  Tue Apr 12 10:32:10 2011
+  NTUSER.DAT.LOG1                    AH   189440  Sun Apr 19 20:52:07 2020
+  NTUSER.DAT.LOG2                    AH        0  Tue Jul 14 04:34:08 2009
+  NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf    AHS    65536  Tue Jul 14 06:45:54 2009
+  NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms    AHS   524288  Tue Jul 14 06:45:54 2009
+  NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms    AHS   524288  Tue Jul 14 06:45:54 2009
+  Pictures                           DR        0  Tue Jul 14 04:34:59 2009
+  Saved Games                        Dn        0  Tue Jul 14 04:34:59 2009
+  Videos                             DR        0  Tue Jul 14 04:34:59 2009
+
+		7863807 blocks of size 4096. 3846985 blocks available
+[?2004hsmb: \Default\> cd Documents
+[?2004l[?2004hsmb: \Default\Documents\> dir
+[?2004l  .                                  DR        0  Tue Jul 14 07:08:56 2009
+  ..                                 DR        0  Tue Jul 14 07:08:56 2009
+
+		7863807 blocks of size 4096. 3846985 blocks available
+[?2004hsmb: \Default\Documents\> cd ..
+[?2004l[?2004hsmb: \Default\> dir Downloads
+[?2004l  Downloads                          DR        0  Tue Jul 14 04:34:59 2009
+
+		7863807 blocks of size 4096. 3846985 blocks available
+[?2004hsmb: \Default\> cd Download
+[?2004lcd \Default\Download\: NT_STATUS_OBJECT_NAME_NOT_FOUND
+[?2004hsmb: \Default\> cd Downloads
+[?2004l[?2004hsmb: \Default\Downloads\> dir
+[?2004l  .                                  DR        0  Tue Jul 14 04:34:59 2009
+  ..                                 DR        0  Tue Jul 14 04:34:59 2009
+
+		7863807 blocks of size 4096. 3846985 blocks available
+[?2004hsmb: \Default\Downloads\> cd ..
+[?2004l[?2004hsmb: \Default\> cd ..
+[?2004l[?2004hsmb: \> dr[Kir
+[?2004l  .                                  DR        0  Fri May 15 03:57:08 2020
+  ..                                 DR        0  Fri May 15 03:57:08 2020
+  Default                           DHR        0  Tue Jul 14 09:07:31 2009
+  desktop.ini                       AHS      174  Tue Jul 14 06:54:24 2009
+  Share                               D        0  Fri May 15 03:58:07 2020
+
+		7863807 blocks of size 4096. 3847156 blocks available
+[?2004hsmb: \> cd Share
+[?2004l[?2004hsmb: \Share\> dir
+[?2004l  .                                   D        0  Fri May 15 03:58:07 2020
+  ..                                  D        0  Fri May 15 03:58:07 2020
+  gatekeeper.exe                      A    13312  Mon Apr 20 07:27:17 2020
+
+		7863807 blocks of size 4096. 3846985 blocks available
+[?2004hsmb: \Share\> get gatekeeper.exe
+[?2004l[?2004hsmb: \Share\> cd[K[K[?2004l
