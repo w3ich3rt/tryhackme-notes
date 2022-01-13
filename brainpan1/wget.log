@@ -1,0 +1,9 @@
+--2022-01-13 22:06:33--  http://10.10.36.127:10000/bin/brainpan.exe
+Connecting to 10.10.36.127:10000... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 21190 (21K) [application/x-msdos-program]
+Saving to: ‘brainpan.exe’
+
+brainpan.exe                                                           100%[==========================================================================================================================================================================>]  20,69K  --.-KB/s    in 0,04s   
+
+2022-01-13 22:06:33 (557 KB/s) - ‘brainpan.exe’ saved [21190/21190]

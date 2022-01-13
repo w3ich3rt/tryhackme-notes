@@ -1,0 +1,19 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.36.127:10000/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/ulli/Documents/Tools/SecLists/Discovery/Web-Content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2022/01/13 22:06:03 Starting gobuster in directory enumeration mode
+===============================================================
+/bin                  (Status: 301) [Size: 0] [--> /bin/]
+/index.html           (Status: 200) [Size: 215]          
+===============================================================
+2022/01/13 22:06:42 Finished
+===============================================================
