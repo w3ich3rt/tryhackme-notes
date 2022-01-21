@@ -1,0 +1,22 @@
+===============================================================
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.204.165/retro/
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /home/ulli/Documents/Tools/SecLists/Discovery/Web-Content/common.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2022/01/21 14:41:43 Starting gobuster in directory enumeration mode
+===============================================================
+/index.php            (Status: 301) [Size: 0] [--> http://10.10.204.165/retro/]
+/wp-admin             (Status: 301) [Size: 159] [--> http://10.10.204.165/retro/wp-admin/]
+/wp-content           (Status: 301) [Size: 161] [--> http://10.10.204.165/retro/wp-content/]
+/wp-includes          (Status: 301) [Size: 162] [--> http://10.10.204.165/retro/wp-includes/]
+/xmlrpc.php           (Status: 405) [Size: 42]                                               
+===============================================================
+2022/01/21 14:42:06 Finished
+===============================================================
